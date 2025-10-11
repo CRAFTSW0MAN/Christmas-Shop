@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 102px;
+  .header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    .header-logo-text {
+      font-family: "Montserrat";
+      font-size: 12px;
+      line-height: 130%;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #181c29;
+      padding-left: 10px;
+    }
+  }
+  .header-menu {
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // margin: 0 5px 0 0;
+      .item {
+        padding: 0 0 0 48px;
+        .item_link {
+          font-family: "Montserrat";
+          font-size: 12px;
+          line-height: 130%;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.6px;
+          color: #181c29;
+        }
+      }
+    }
+  }
+}
