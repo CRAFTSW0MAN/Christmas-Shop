@@ -329,13 +329,13 @@ textarea {
   align-items: center;
   margin: 20px 102px;
 }
-.header .header-logo {
+.header .header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
-.header .header-logo .header-logo-text {
+.header .header__logo .header__logo-text {
   font-family: "Montserrat";
   font-size: 12px;
   line-height: 130%;
@@ -345,15 +345,15 @@ textarea {
   color: #181c29;
   padding-left: 10px;
 }
-.header .header-menu .menu {
+.header .header__nav .nav__list {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header .header-menu .menu .item {
+.header .header__nav .nav__list .nav__item {
   padding: 0 0 0 48px;
 }
-.header .header-menu .menu .item .item_link {
+.header .header__nav .nav__list .nav__item .nav__link {
   font-family: "Montserrat";
   font-size: 12px;
   line-height: 130%;
@@ -361,6 +361,51 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 0.6px;
   color: #181c29;
+}
+
+.hero {
+  background-color: #ff4646;
+  width: 100%;
+  background-image: url("../../assets/images/christmasBoll.png"), url("../../assets/images/snow.png"), url("img/background/bg.webp");
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
+  border-radius: 20px 20px 0 0;
+}
+.hero .hero__content {
+  margin: 0 auto;
+  padding: 120px 0 119px;
+  max-width: 452px;
+  text-align: center;
+}
+.hero .hero__content .hero__subtitle {
+  font-family: "Allura";
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+.hero .hero__content .hero__title {
+  font-family: "Montserrat";
+  font-size: 32px;
+  line-height: 150%;
+  font-weight: 600;
+  letter-spacing: 5.76px;
+  text-transform: uppercase;
+  margin: 12px 11.5px;
+}
+.hero .hero__content .hero__button {
+  padding: 20px 32.5px;
+  margin-bottom: 13px;
+  border-radius: 20px;
+  background-color: #181C29;
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 * {

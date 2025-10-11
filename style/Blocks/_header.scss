@@ -3,12 +3,12 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px 102px;
-  .header-logo {
+  .header__logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    .header-logo-text {
+    .header__logo-text {
       font-family: "Montserrat";
       font-size: 12px;
       line-height: 130%;
@@ -19,15 +19,14 @@
       padding-left: 10px;
     }
   }
-  .header-menu {
-    .menu {
+  .header__nav {
+    .nav__list {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // margin: 0 5px 0 0;
-      .item {
+      .nav__item {
         padding: 0 0 0 48px;
-        .item_link {
+        .nav__link {
           font-family: "Montserrat";
           font-size: 12px;
           line-height: 130%;
