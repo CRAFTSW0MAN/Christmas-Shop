@@ -1,0 +1,58 @@
+.slider {
+  background-color: #ff4646;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../assets/images/snow.png");
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
+  .slider__subtitle {
+    font-family: "Allura";
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+  }
+  .slider__title {
+    font-family: "Montserrat";
+    font-size: 24px;
+    line-height: 152%;
+    font-weight: 600;
+    letter-spacing: 3.84px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 14px 0 18px 2px;
+  }
+  .slider__wrapper {
+    overflow: hidden;
+    width: 100%;
+    .slider__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 83px;
+      column-gap: 21px;
+      .slider__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .slider__item-text{
+          font-family: "Montserrat";
+          font-size: 80px;
+          line-height: 100%;
+          font-weight: 600;
+          letter-spacing: 0;
+          text-transform: uppercase;
+          color: #ffffff;
+          margin-right: 20px;
+        }
+        .slider__image{
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

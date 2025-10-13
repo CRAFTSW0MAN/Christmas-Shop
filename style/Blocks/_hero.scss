@@ -1,8 +1,9 @@
 .hero {
   background-color: #ff4646;
+  color: #ffffff;
   width: 100%;
-  background-image: url("../../assets/images/christmasBoll.png"),
-    url("../../assets/images/snow.png"), url("img/background/bg.webp");
+  background-image: url("../assets/images/christmasBoll.png"),
+    url("../assets/images/snow.png");
   background-repeat: no-repeat;
   background-position: center, center;
   background-size: cover, cover;

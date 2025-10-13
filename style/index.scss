@@ -1,6 +1,8 @@
 @use 'normalize';
 @use './Blocks/header';
 @use './Blocks/hero';
+@use './Blocks/about';
+@use './Blocks/slider';
 
 *{
   margin: 0 auto;
