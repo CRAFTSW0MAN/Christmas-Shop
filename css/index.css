@@ -458,7 +458,7 @@ textarea {
 }
 .about .about__container .about__image {
   width: 60%;
-  background-image: url("../../assets/images/santa.png");
+  background-image: url("../assets/images/santa.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -578,6 +578,82 @@ textarea {
 .slider .slider__controls .slider__button--left::before {
   transform: rotate(-45deg);
   right: 25px;
+}
+
+.gifts {
+  padding: 58px 0;
+  background-color: #ff4646;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../assets/images/snow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.gifts .gifts__subtitle {
+  font-family: "Allura";
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+}
+.gifts .gifts__title {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 152%;
+  font-weight: 600;
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 14px 0 18px 2px;
+}
+.gifts .gifts__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  flex-wrap: wrap;
+}
+.gifts .gifts__container .gifts__card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 310px;
+  height: 342px;
+  box-sizing: border-box;
+  text-align: start;
+}
+.gifts .gifts__container .gifts__card .gifts__card-title {
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin: 20px 20px 10px 20px;
+}
+.gifts .gifts__container .gifts__card .gifts__card-text {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 152%;
+  font-weight: 600;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  margin: 0 20px;
+}
+.gifts .gifts__container .gifts__card:nth-child(1) .gifts__card-title {
+  color: #4361ff;
+}
+.gifts .gifts__container .gifts__card:nth-child(2) .gifts__card-title {
+  color: #06a44f;
+}
+.gifts .gifts__container .gifts__card:nth-child(3) .gifts__card-title {
+  color: #4361ff;
+}
+.gifts .gifts__container .gifts__card:nth-child(4) .gifts__card-title {
+  color: #ff43f7;
 }
 
 * {
