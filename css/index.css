@@ -365,8 +365,9 @@ textarea {
 
 .hero {
   background-color: #ff4646;
+  color: #ffffff;
   width: 100%;
-  background-image: url("../../assets/images/christmasBoll.png"), url("../../assets/images/snow.png"), url("img/background/bg.webp");
+  background-image: url("../assets/images/christmasBoll.png"), url("../assets/images/snow.png");
   background-repeat: no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -406,6 +407,177 @@ textarea {
   letter-spacing: 0.6px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.about {
+  background-color: #ff4646;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../assets/images/snow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 82px;
+}
+.about .about__container {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.about .about__container .about__content {
+  width: 54.4%;
+  box-sizing: border-box;
+  margin: 18px 0 15px 60px;
+}
+.about .about__container .about__content .about__subtitle {
+  font-family: "Allura";
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  color: #ff4646;
+}
+.about .about__container .about__content .about__title {
+  margin: 21.5px 0 21px;
+  max-width: 426px;
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 152%;
+  font-weight: 600;
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+}
+.about .about__container .about__content .about__text {
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 148%;
+  font-weight: 400;
+  max-width: 426px;
+}
+.about .about__container .about__image {
+  width: 60%;
+  background-image: url("../../assets/images/santa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 528px;
+  border-radius: 20px;
+}
+
+.slider {
+  background-color: #ff4646;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url("../assets/images/snow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 0 40px;
+  text-align: center;
+}
+.slider .slider__subtitle {
+  font-family: "Allura";
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  color: #ffffff;
+}
+.slider .slider__title {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 152%;
+  font-weight: 600;
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 14px 0 18px 2px;
+}
+.slider .slider__wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+.slider .slider__wrapper .slider__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 83px;
+  -moz-column-gap: 21px;
+       column-gap: 21px;
+}
+.slider .slider__wrapper .slider__container .slider__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider .slider__wrapper .slider__container .slider__item .slider__item-text {
+  font-family: "Montserrat";
+  font-size: 80px;
+  line-height: 100%;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-right: 20px;
+}
+.slider .slider__wrapper .slider__container .slider__item .slider__image {
+  border-radius: 20px;
+}
+.slider .slider__controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 83px;
+}
+.slider .slider__controls .slider__button {
+  padding: 27px 20px;
+  border-radius: 20px;
+  margin-left: 21px;
+  background-color: #ff4646;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+.slider .slider__controls .slider__button .slider__button-content {
+  display: block;
+  height: 1.5px;
+  width: 12px;
+  background-color: #ffffff;
+}
+.slider .slider__controls .slider__button--right,
+.slider .slider__controls .slider__button--left {
+  position: relative;
+}
+.slider .slider__controls .slider__button--right::after,
+.slider .slider__controls .slider__button--left::after {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  background-color: #ffffff;
+  width: 8px;
+  right: 18px;
+  top: 29.5px;
+  transform: rotate(-45deg);
+}
+.slider .slider__controls .slider__button--left::after {
+  right: 25px;
+  transform: rotate(45deg);
+}
+.slider .slider__controls .slider__button--right::before,
+.slider .slider__controls .slider__button--left::before {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  background-color: #ffffff;
+  width: 8px;
+  right: 18px;
+  top: 24px;
+  transform: rotate(45deg);
+}
+.slider .slider__controls .slider__button--left::before {
+  transform: rotate(-45deg);
+  right: 25px;
 }
 
 * {
