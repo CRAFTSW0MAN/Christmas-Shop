@@ -656,6 +656,96 @@ textarea {
   color: #ff43f7;
 }
 
+.cta {
+  background-color: #ff4646;
+  color: #ffffff;
+  width: 100%;
+  background-image: url("../assets/images/forest-bg.png"), url("../assets/images/snow.png");
+  background-repeat: no-repeat;
+  background-position: 20%, center;
+  background-size: 100%, cover;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+.cta .cta__container {
+  margin: 182px 0 172px;
+  padding: 0 0 0 0;
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.cta .cta__container .cta__title {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 152%;
+  font-weight: 600;
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+.cta .cta__container .cta__button {
+  padding: 20.5px 31px;
+  margin: 18px auto 21px;
+  border-radius: 20px;
+  background-color: #181c29;
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.cta .cta__container .cta__subtitle {
+  font-family: "Allura";
+  font-size: 24px;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+.cta .cta__container .cta__timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 7px 39px;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 343.5px;
+  height: 72px;
+}
+.cta .cta__container .cta__timer .cta__timer-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  width: 80px;
+}
+.cta .cta__container .cta__timer .cta__timer-item .cta__timer-number {
+  font-family: "Montserrat";
+  font-size: 24px;
+  line-height: 152%;
+  font-weight: 600;
+  letter-spacing: 3.84px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+.cta .cta__container .cta__timer .cta__timer-item .cta__timer-label {
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 130%;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 * {
   margin: 0 auto;
 }
