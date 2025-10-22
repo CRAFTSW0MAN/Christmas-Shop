@@ -1,37 +1,23 @@
+@use 'mixins' as mixins;
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include mixins.flex-space-between;
   margin: 20px 102px;
   .header__logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include mixins.flex-space-between;
     cursor: pointer;
     .header__logo-text {
-      font-family: "Montserrat";
-      font-size: 12px;
-      line-height: 130%;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
+      @include mixins.header-4;
       color: #181c29;
       padding-left: 10px;
     }
   }
   .header__nav {
     .nav__list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include mixins.flex-space-between;
       .nav__item {
         padding: 0 0 0 48px;
         .nav__link {
-          font-family: "Montserrat";
-          font-size: 12px;
-          line-height: 130%;
-          font-weight: 600;
-          text-transform: uppercase;
+          @include mixins.header-4;
           letter-spacing: 0.6px;
           color: #181c29;
         }

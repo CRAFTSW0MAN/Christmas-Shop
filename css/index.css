@@ -340,8 +340,8 @@ textarea {
   font-size: 12px;
   line-height: 130%;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0.6px;
+  text-transform: uppercase;
   color: #181c29;
   padding-left: 10px;
 }
@@ -358,6 +358,7 @@ textarea {
   font-size: 12px;
   line-height: 130%;
   font-weight: 600;
+  letter-spacing: 0.6px;
   text-transform: uppercase;
   letter-spacing: 0.6px;
   color: #181c29;
@@ -396,17 +397,17 @@ textarea {
   margin: 12px 11.5px;
 }
 .hero .hero__content .hero__button {
+  border-radius: 20px;
+  background-color: #181c29;
+  color: #ffffff;
   padding: 20px 32.5px;
   margin-bottom: 13px;
-  border-radius: 20px;
-  background-color: #181C29;
   font-family: "Montserrat";
   font-size: 12px;
   line-height: 130%;
   font-weight: 600;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 .about {
@@ -719,9 +720,9 @@ textarea {
 }
 .cta .cta__container .cta__timer .cta__timer-item {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 8px 10px;
   box-sizing: border-box;
   width: 80px;
@@ -812,7 +813,6 @@ textarea {
   font-size: 16px;
   line-height: 148%;
   font-weight: 400;
-  letter-spacing: 0;
 }
 .footer .footer__info {
   font-family: "Allura";
@@ -821,7 +821,7 @@ textarea {
   font-weight: 400;
   letter-spacing: 1.2px;
   color: #181c29;
-  margin-top: 10px;
+  margin: 10px 0 60px 0;
 }
 
 * {

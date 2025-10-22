@@ -1,3 +1,4 @@
+@use "mixins" as mixins;
 .about {
   background-color: #ff4646;
   width: 100%;
@@ -9,37 +10,23 @@
   padding: 60px 82px;
   .about__container {
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include mixins.flex-center;
     background-color: #ffffff;
     .about__content {
       width: 54.4%;
       box-sizing: border-box;
       margin: 18px 0 15px 60px;
       .about__subtitle {
-        font-family: "Allura";
-        font-size: 24px;
-        line-height: 100%;
-        font-weight: 400;
-        letter-spacing: 1.2px;
+        @include mixins.subtitle;
         color: #ff4646;
       }
       .about__title {
         margin: 21.5px 0 21px;
         max-width: 426px;
-        font-family: "Montserrat";
-        font-size: 24px;
-        line-height: 152%;
-        font-weight: 600;
-        letter-spacing: 3.84px;
-        text-transform: uppercase;
+        @include mixins.header-2;
       }
       .about__text {
-        font-family: "Montserrat";
-        font-size: 16px;
-        line-height: 148%;
-        font-weight: 400;
+        @include mixins.header-3;
         max-width: 426px;
       }
     }

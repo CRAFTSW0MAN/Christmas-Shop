@@ -1,3 +1,4 @@
+@use 'mixins' as mixins;
 .hero {
   background-color: #ff4646;
   color: #ffffff;
@@ -15,33 +16,19 @@
     text-align: center;
 
     .hero__subtitle {
-      font-family: "Allura";
-      font-size: 24px;
-      line-height: 100%;
-      font-weight: 400;
-      letter-spacing: 1.2px;
+      @include mixins.subtitle;
     }
     .hero__title{
-      font-family: "Montserrat";
-      font-size: 32px;
-      line-height: 150%;
-      font-weight: 600;
-      letter-spacing: 5.76px;
-      text-transform: uppercase;
+      @include mixins.header-1;
       margin: 12px 11.5px;
     }
     .hero__button {
+      border-radius: 20px;
+      background-color: #181c29;
+      color: #ffffff;
       padding: 20px 32.5px;
       margin-bottom: 13px;
-      border-radius: 20px;
-      background-color: #181C29;
-      font-family: "Montserrat";
-      font-size: 12px;
-      line-height: 130%;
-      font-weight: 600;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
-      color: #FFFFFF;
+      @include mixins.header-4;
     }
   }
 }

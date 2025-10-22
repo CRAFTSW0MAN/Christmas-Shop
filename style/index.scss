@@ -1,4 +1,5 @@
 @use 'normalize';
+@use './Blocks/mixins' as mixins;
 @use './Blocks/header';
 @use './Blocks/hero';
 @use './Blocks/about';
@@ -6,6 +7,7 @@
 @use './Blocks/gifts';
 @use './Blocks/cta';
 @use './Blocks/footer';
+
 
 *{
   margin: 0 auto;
