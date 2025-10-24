@@ -1,3 +1,4 @@
+@use 'mixins' as mixins;
 .slider {
   background-color: #ff4646;
   width: 100%;
@@ -9,20 +10,11 @@
   padding: 60px 0 40px;
   text-align: center;
   .slider__subtitle {
-    font-family: "Allura";
-    font-size: 24px;
-    line-height: 100%;
-    font-weight: 400;
-    letter-spacing: 1.2px;
+    @include mixins.subtitle;
     color: #ffffff;
   }
   .slider__title {
-    font-family: "Montserrat";
-    font-size: 24px;
-    line-height: 152%;
-    font-weight: 600;
-    letter-spacing: 3.84px;
-    text-transform: uppercase;
+    @include mixins.header-2;
     color: #ffffff;
     margin: 14px 0 18px 2px;
   }
@@ -30,15 +22,11 @@
     overflow: hidden;
     width: 100%;
     .slider__container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include mixins.flex-space-between;
       padding-left: 83px;
       column-gap: 21px;
       .slider__item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include mixins.flex-space-between;
         .slider__item-text {
           font-family: "Montserrat";
           font-size: 80px;

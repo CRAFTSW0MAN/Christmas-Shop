@@ -1,3 +1,4 @@
+@use 'mixins' as mixins;
 .cta {
   background-color: #ff4646;
   color: #ffffff;
@@ -18,12 +19,7 @@
     justify-content: center;
     flex-direction: column;
     .cta__title {
-      font-family: "Montserrat";
-      font-size: 24px;
-      line-height: 152%;
-      font-weight: 600;
-      letter-spacing: 3.84px;
-      text-transform: uppercase;
+      @include mixins.header-2;
       color: #ffffff;
       text-align: center;
     }
@@ -32,56 +28,33 @@
       margin: 18px auto 21px;
       border-radius: 20px;
       background-color: #181c29;
-      font-family: "Montserrat";
-      font-size: 12px;
-      line-height: 130%;
-      font-weight: 600;
-      letter-spacing: 0.6px;
-      text-transform: uppercase;
+      @include mixins.header-4;
       color: #ffffff;
     }
     .cta__subtitle {
-      font-family: "Allura";
-      font-size: 24px;
-      line-height: 100%;
-      font-weight: 400;
-      letter-spacing: 1.2px;
+      @include mixins.subtitle;
       text-align: center;
     }
     .cta__timer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include mixins.flex-center;
       border-radius: 20px;
       margin: 7px 39px;
       background-color: rgb(255, 255, 255, 0.4);
       width: 343.5px;
       height: 72px;
       .cta__timer-item {
-        display: flex;
+        @include mixins.flex-center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding: 8px 10px;
         box-sizing: border-box;
         width: 80px;
         .cta__timer-number {
-          font-family: "Montserrat";
-          font-size: 24px;
-          line-height: 152%;
-          font-weight: 600;
-          letter-spacing: 3.84px;
-          text-transform: uppercase;
+          @include mixins.header-2;
           color: #ffffff;
           text-align: center;
         }
         .cta__timer-label {
-          font-family: "Montserrat";
-          font-size: 12px;
-          line-height: 130%;
-          font-weight: 600;
-          letter-spacing: 0.6px;
-          text-transform: uppercase;
+          @include mixins.header-4;
           color: #ffffff;
         }
       }

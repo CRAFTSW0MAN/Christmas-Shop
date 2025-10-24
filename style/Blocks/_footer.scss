@@ -1,3 +1,4 @@
+@use 'mixins' as mixins;
 .footer {
   width: 100%;
   margin: 0 auto;
@@ -21,21 +22,11 @@
         margin: 15px 0 13px 3px;
         .footer__link-text {
           color: #181c29;
-          font-family: "Montserrat";
-          font-size: 24px;
-          line-height: 152%;
-          font-weight: 600;
-          letter-spacing: 3.84px;
-          text-transform: uppercase;
+          @include mixins.header-2;
         }
       }
       .footer__description {
-        font-family: "Montserrat";
-        font-size: 16px;
-        line-height: 152%;
-        font-weight: 600;
-        letter-spacing: 1.28px;
-        text-transform: uppercase;
+        @include mixins.header-description;
         color: #181c29;
       }
     }
@@ -58,19 +49,11 @@
   }
   .footer__copyright {
     color: #181c29;
-    font-family: "Montserrat";
-    font-size: 16px;
-    line-height: 148%;
-    font-weight: 400;
-    letter-spacing: 0;
+    @include mixins.header-3;
   }
   .footer__info {
-    font-family: "Allura";
-    font-size: 24px;
-    line-height: 100%;
-    font-weight: 400;
-    letter-spacing: 1.2px;
+    @include mixins.subtitle;
     color: #181c29;
-    margin-top: 10px;
+    margin: 10px 0 60px 0;
   }
 }
